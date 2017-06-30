@@ -1,6 +1,6 @@
 # mpc-control
 
-An interactive controller for MPC.
+An interactive controller for MPC (music player daemon).
 
 ## Installation
 
