@@ -40,7 +40,7 @@ stdin.on( 'data', function( key ){
     } else if ( key === 's') {
       exec('mpc stop');
     } else {
-      console.log('No control found for this key.');
+      console.log('No control found for this key. You can quit mpc-control with ctrl+c.');
     }
   }
 
