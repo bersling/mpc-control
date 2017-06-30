@@ -1,6 +1,4 @@
-declare var process;
-
-var stdin = process.stdin;
+var stdin: any = process.stdin;
 
 import { exec } from 'child_process';
 

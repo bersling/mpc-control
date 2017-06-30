@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/bersling/mpc-control/issues"
   },
-  "homepage": "https://github.com/bersling/mpc-control#readme"
+  "homepage": "https://github.com/bersling/mpc-control#readme",
+  "dependencies": {
+    "@types/node": "^8.0.6"
+  }
 }
