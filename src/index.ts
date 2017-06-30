@@ -25,6 +25,14 @@ stdin.on( 'data', function( key ){
       exec('mpc volume +1', function(){ /*console.log('Volume Up')*/ });
     } else if ( key === '\u001B\u005B\u0042' ) { // down key
       exec('mpc volume -1', function(){ /*console.log('Volume Down')*/ });
+    } else if ( key === '\u0020'  ) { //space
+      exec('mpc status', function(error, stdout, stderr) {
+        if (stdout.includes("[playing]") ) {
+         exec('mpc pause');
+        } else {
+          exec('mpc play');
+        }
+      });
     } else if ( parseInt(key)  ) { // keys from 1 - 9
       exec(`mpc play ${key}`);
     } else if ( key === 'p') {
