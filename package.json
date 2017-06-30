@@ -1,6 +1,6 @@
 {
   "name": "mpc-control",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "An interactive shell controller for MPC",
   "bin": {
     "mpc-control": "dist/index.js"
