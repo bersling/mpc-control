@@ -16,6 +16,7 @@ stdin.setEncoding( 'utf8' );
 
 // on any data into stdin
 stdin.on( 'data', function( key ){
+
   // ctrl-c ( end of text )
   if ( key === '\u0003' ) {
     process.exit();
@@ -24,6 +25,12 @@ stdin.on( 'data', function( key ){
       exec('mpc volume +1', function(){ /*console.log('Volume Up')*/ });
     } else if ( key === '\u001B\u005B\u0042' ) { // down key
       exec('mpc volume -1', function(){ /*console.log('Volume Down')*/ });
+    } else if ( parseInt(key)  ) { // keys from 1 - 9
+      exec(`mpc play ${key}`);
+    } else if ( key === 'p') {
+      exec('mpc play');
+    } else if ( key === 's') {
+      exec('mpc stop');
     } else {
       console.log('No control found for this key.');
     }
