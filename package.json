@@ -2,6 +2,9 @@
   "name": "mpc-control",
   "version": "1.0.0",
   "description": "An interactive shell controller for MPC",
+  "bin": {
+    "mpc-control": "dist/index.js"
+  },
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

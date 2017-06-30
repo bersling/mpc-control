@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var stdin: any = process.stdin;
 
 import { exec } from 'child_process';
