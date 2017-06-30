@@ -23,6 +23,7 @@ There are now a number of shortcut keys available to easily handle your mpc play
 
 - p: mpc play
 - s: mpc stop
+- space: toggle pause / play
 
 ### Volume
 
